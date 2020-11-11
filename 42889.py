@@ -31,3 +31,5 @@ def solution(N, stages):
         answer.append(failPercent[i][0])
         
     return answer
+
+teest
