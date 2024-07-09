@@ -1,6 +1,7 @@
 def solution(board):
     countO = 0
     countX = 0
+    
     for i in range(3):  # X의 개수는 O보다 같거나 1 적어야함.
         for j in range(3):
             if (board[i][j] == 'O'):
