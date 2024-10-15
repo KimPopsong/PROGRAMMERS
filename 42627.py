@@ -9,6 +9,7 @@ def solution(jobs):
 
     canRun = []
     time = 0  # 처리할 작업이 없을 경우 생기는 공백 제거
+    
     while (True):
         if (len(canRun) == 0):  # 작업이 없을 경우
             if (len(jobs) == 0):  # 모든 작업을 마쳤을 경우
