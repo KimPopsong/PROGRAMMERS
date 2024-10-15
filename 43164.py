@@ -36,7 +36,6 @@ def solution(tickets):
             search(1, tickets[i][1])  # 탐색
 
             isVisit[i] = False
-
         orders.clear()
 
     avail.sort()
