@@ -7,8 +7,8 @@ class Solution {
     {
         String[] answer;
 
-        for (int i = 0; i < line.length - 1; i++)
-        {  // 교점의 좌표 구하기
+        for (int i = 0; i < line.length - 1; i++)  // 교점의 좌표 구하기
+        {
             long A = line[i][0];
             long B = line[i][1];
             long E = line[i][2];
@@ -21,13 +21,13 @@ class Solution {
 
                 long x = 0, y = 0;
 
-                if (A * D == B * C)
-                {  // 평행하거나 일치한다면
+                if (A * D == B * C)  // 평행하거나 일치한다면
+                {
                     continue;
                 }
 
-                if ((B * F - E * D) % (A * D - B * C) == 0)
-                {  // x 좌표가 정수라면
+                if ((B * F - E * D) % (A * D - B * C) == 0)  // x 좌표가 정수라면
+                {
                     x = (B * F - E * D) / (A * D - B * C);
                 }
 
@@ -36,8 +36,8 @@ class Solution {
                     continue;
                 }
 
-                if ((E * C - A * F) % (A * D - B * C) == 0)
-                {  // y 좌표가 정수라면
+                if ((E * C - A * F) % (A * D - B * C) == 0)  // y 좌표가 정수라면
+                {
                     y = (E * C - A * F) / (A * D - B * C);
                 }
 
